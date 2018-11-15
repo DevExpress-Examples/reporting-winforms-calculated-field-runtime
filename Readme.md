@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/UsingCalculatedFields/Form1.cs) (VB: [Form1.vb](./VB/UsingCalculatedFields/Form1.vb))
+<!-- default file list end -->
 # How to create a calculated field at runtime
 
 
