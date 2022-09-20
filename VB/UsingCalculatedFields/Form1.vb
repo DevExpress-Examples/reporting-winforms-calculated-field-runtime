@@ -1,27 +1,25 @@
-﻿Imports System
+Imports System
 Imports System.Windows.Forms
 Imports DevExpress.XtraReports.UI
 Imports DevExpress.XtraReports.Configuration
-' ...
 
+' ...
 Namespace UsingCalculatedFields
-    Partial Public Class Form1
+
+    Public Partial Class Form1
         Inherits Form
 
         Public Sub New()
             InitializeComponent()
         End Sub
 
-        Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles button1.Click
-
+        Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
             ' Create a report.
-            Dim report As New XtraReport1()
-
+            Dim report As XtraReport1 = New XtraReport1()
             ' Create a calculated field 
             ' and add it to the report's collection.
-            Dim calcField As New CalculatedField()
+            Dim calcField As CalculatedField = New CalculatedField()
             report.CalculatedFields.Add(calcField)
-
             ' Define the calculated field's properties.
             calcField.DataSource = report.DataSource
             calcField.DataMember = report.DataMember
@@ -29,10 +27,8 @@ Namespace UsingCalculatedFields
             calcField.DisplayName = "Calculated Field"
             calcField.Name = "myField"
             calcField.Expression = "[UnitPrice] * [UnitsInStock]"
-
             ' Bind a label's Text property to the calculated field.
             report.FindControl("xrlabel2", True).DataBindings.Add("Text", Nothing, "Order Details.myField")
-
             ' Bind a label's Text property to the calculated field 
             ' depending on the report's data binding mode.
             If Settings.Default.UserDesignerOptions.DataBindingMode = DataBindingMode.Bindings Then
@@ -42,9 +38,8 @@ Namespace UsingCalculatedFields
             End If
 
             ' Display the report.
-            Dim printTool As New ReportPrintTool(report)
+            Dim printTool As ReportPrintTool = New ReportPrintTool(report)
             printTool.ShowPreviewDialog()
         End Sub
-
     End Class
 End Namespace

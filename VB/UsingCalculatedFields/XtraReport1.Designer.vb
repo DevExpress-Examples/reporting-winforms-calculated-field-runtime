@@ -1,5 +1,7 @@
-﻿Namespace UsingCalculatedFields
-    Partial Public Class XtraReport1
+Namespace UsingCalculatedFields
+
+    Partial Class XtraReport1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,45 +12,45 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Designer generated code"
-
+'#Region "Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim selectQuery1 As New DevExpress.DataAccess.Sql.SelectQuery()
-            Dim column1 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression1 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim table1 As New DevExpress.DataAccess.Sql.Table()
-            Dim column2 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression2 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim column3 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression3 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim column4 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression4 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim column5 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression5 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim column6 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression6 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim column7 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression7 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim column8 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression8 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim column9 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression9 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim column10 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression10 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim column11 As New DevExpress.DataAccess.Sql.Column()
-            Dim columnExpression11 As New DevExpress.DataAccess.Sql.ColumnExpression()
-            Dim resources As New System.ComponentModel.ComponentResourceManager(GetType(XtraReport1))
+            Dim selectQuery1 As DevExpress.DataAccess.Sql.SelectQuery = New DevExpress.DataAccess.Sql.SelectQuery()
+            Dim column1 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression1 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim table1 As DevExpress.DataAccess.Sql.Table = New DevExpress.DataAccess.Sql.Table()
+            Dim column2 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression2 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim column3 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression3 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim column4 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression4 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim column5 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression5 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim column6 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression6 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim column7 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression7 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim column8 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression8 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim column9 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression9 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim column10 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression10 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim column11 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+            Dim columnExpression11 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+            Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UsingCalculatedFields.XtraReport1))
             Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
             Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
             Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
@@ -60,11 +62,11 @@
             Me.xrLabel4 = New DevExpress.XtraReports.UI.XRLabel()
             Me.xrLabel5 = New DevExpress.XtraReports.UI.XRLabel()
             Me.xrLabel6 = New DevExpress.XtraReports.UI.XRLabel()
-            CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me), System.ComponentModel.ISupportInitialize).BeginInit()
             ' 
             ' Detail
             ' 
-            Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrLabel3, Me.xrLabel2, Me.xrLabel1})
+            Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrLabel3, Me.xrLabel2, Me.xrLabel1})
             Me.Detail.HeightF = 42.70833F
             Me.Detail.Name = "Detail"
             Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
@@ -135,12 +137,12 @@
             selectQuery1.Columns.Add(column11)
             selectQuery1.Name = "Products"
             selectQuery1.Tables.Add(table1)
-            Me.sqlDataSource1.Queries.AddRange(New DevExpress.DataAccess.Sql.SqlQuery() { selectQuery1})
+            Me.sqlDataSource1.Queries.AddRange(New DevExpress.DataAccess.Sql.SqlQuery() {selectQuery1})
             Me.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable")
             ' 
             ' xrLabel1
             ' 
-            Me.xrLabel1.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitPrice]")})
+            Me.xrLabel1.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitPrice]")})
             Me.xrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(10.00001F, 10.00001F)
             Me.xrLabel1.Name = "xrLabel1"
             Me.xrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
@@ -152,7 +154,7 @@
             ' 
             ' xrLabel2
             ' 
-            Me.xrLabel2.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() { New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitsInStock]")})
+            Me.xrLabel2.ExpressionBindings.AddRange(New DevExpress.XtraReports.UI.ExpressionBinding() {New DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UnitsInStock]")})
             Me.xrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(141.6667F, 9.708341F)
             Me.xrLabel2.Name = "xrLabel2"
             Me.xrLabel2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
@@ -164,7 +166,7 @@
             ' xrLabel3
             ' 
             Me.xrLabel3.Font = New System.Drawing.Font("Times New Roman", 9.75F)
-            Me.xrLabel3.ForeColor = System.Drawing.Color.FromArgb((CInt((CByte(0)))), (CInt((CByte(128)))), (CInt((CByte(255)))))
+            Me.xrLabel3.ForeColor = System.Drawing.Color.FromArgb((CInt(((CByte((0)))))), (CInt(((CByte((128)))))), (CInt(((CByte((255)))))))
             Me.xrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(278.125F, 10.00001F)
             Me.xrLabel3.Name = "xrLabel3"
             Me.xrLabel3.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
@@ -177,7 +179,7 @@
             ' 
             ' ReportHeader
             ' 
-            Me.ReportHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrLabel6, Me.xrLabel5, Me.xrLabel4})
+            Me.ReportHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.xrLabel6, Me.xrLabel5, Me.xrLabel4})
             Me.ReportHeader.HeightF = 39.58333F
             Me.ReportHeader.Name = "ReportHeader"
             ' 
@@ -208,7 +210,7 @@
             ' xrLabel6
             ' 
             Me.xrLabel6.Font = New System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold)
-            Me.xrLabel6.ForeColor = System.Drawing.Color.FromArgb((CInt((CByte(0)))), (CInt((CByte(128)))), (CInt((CByte(255)))))
+            Me.xrLabel6.ForeColor = System.Drawing.Color.FromArgb((CInt(((CByte((0)))))), (CInt(((CByte((128)))))), (CInt(((CByte((255)))))))
             Me.xrLabel6.LocationFloat = New DevExpress.Utils.PointFloat(278.125F, 10.00001F)
             Me.xrLabel6.Name = "xrLabel6"
             Me.xrLabel6.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F)
@@ -221,27 +223,35 @@
             ' 
             ' XtraReport1
             ' 
-            Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.Detail, Me.TopMargin, Me.BottomMargin, Me.ReportHeader})
-            Me.ComponentStorage.AddRange(New System.ComponentModel.IComponent() { Me.sqlDataSource1})
+            Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() {Me.Detail, Me.TopMargin, Me.BottomMargin, Me.ReportHeader})
+            Me.ComponentStorage.AddRange(New System.ComponentModel.IComponent() {Me.sqlDataSource1})
             Me.DataMember = "Products"
             Me.DataSource = Me.sqlDataSource1
             Me.Version = "17.2"
-            CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
-
+            CType((Me), System.ComponentModel.ISupportInitialize).EndInit()
         End Sub
 
-        #End Region
-
+'#End Region
         Private Detail As DevExpress.XtraReports.UI.DetailBand
+
         Private TopMargin As DevExpress.XtraReports.UI.TopMarginBand
+
         Private BottomMargin As DevExpress.XtraReports.UI.BottomMarginBand
+
         Private sqlDataSource1 As DevExpress.DataAccess.Sql.SqlDataSource
+
         Private xrLabel1 As DevExpress.XtraReports.UI.XRLabel
+
         Private xrLabel3 As DevExpress.XtraReports.UI.XRLabel
+
         Private xrLabel2 As DevExpress.XtraReports.UI.XRLabel
+
         Private ReportHeader As DevExpress.XtraReports.UI.ReportHeaderBand
+
         Private xrLabel6 As DevExpress.XtraReports.UI.XRLabel
+
         Private xrLabel5 As DevExpress.XtraReports.UI.XRLabel
+
         Private xrLabel4 As DevExpress.XtraReports.UI.XRLabel
     End Class
 End Namespace
