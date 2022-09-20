@@ -2,7 +2,6 @@ using System;
 using System.Windows.Forms;
 using DevExpress.XtraReports.UI;
 using DevExpress.XtraReports.Configuration;
-// ...
 
 namespace UsingCalculatedFields {
     public partial class Form1 : Form {
@@ -20,7 +19,7 @@ namespace UsingCalculatedFields {
             CalculatedField calcField = new CalculatedField();
             report.CalculatedFields.Add(calcField);
 
-            // Define the calculated field's properties.
+            // Specify the calculated field's properties.
             calcField.DataSource = report.DataSource;
             calcField.DataMember = report.DataMember;
             calcField.FieldType = FieldType.Double;
@@ -28,20 +27,17 @@ namespace UsingCalculatedFields {
             calcField.Name = "myField";
             calcField.Expression = "[UnitPrice] * [UnitsInStock]";
 
-            // Bind a label's Text property to the calculated field.
-            report.FindControl("xrlabel2", true).DataBindings.Add("Text", null, "Order Details.myField");
+            // Bind the label's Text property to the calculated field.
+            report.FindControl("xrlabel3", true).ExpressionBindings
+                        .Add(new ExpressionBinding() {
+                            EventName = "BeforePrint",
+                            PropertyName = "Text",
+                            Expression = "FormatString('{0:c2}', [myField])"
+                        });
 
-            // Bind a label's Text property to the calculated field 
-            // depending on the report's data binding mode.
-            if (Settings.Default.UserDesignerOptions.DataBindingMode == DataBindingMode.Bindings)
-                report.FindControl("xrlabel3", true).DataBindings.Add("Text", null, "Products.myField", "{0:c2}");
-            else report.FindControl("xrlabel3", true).ExpressionBindings.Add(
-                new ExpressionBinding("BeforePrint", "Text", "FormatString('{0:c2}', [myField])"));
-
-            // Display the report.
+            // Preview the report.
             ReportPrintTool printTool = new ReportPrintTool(report);
             printTool.ShowPreviewDialog();
         }
-
     }
 }

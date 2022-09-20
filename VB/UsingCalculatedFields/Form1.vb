@@ -31,15 +31,7 @@ Namespace UsingCalculatedFields
             calcField.Expression = "[UnitPrice] * [UnitsInStock]"
 
             ' Bind a label's Text property to the calculated field.
-            report.FindControl("xrlabel2", True).DataBindings.Add("Text", Nothing, "Order Details.myField")
-
-            ' Bind a label's Text property to the calculated field 
-            ' depending on the report's data binding mode.
-            If Settings.Default.UserDesignerOptions.DataBindingMode = DataBindingMode.Bindings Then
-                report.FindControl("xrlabel3", True).DataBindings.Add("Text", Nothing, "Products.myField", "{0:c2}")
-            Else
-                report.FindControl("xrlabel3", True).ExpressionBindings.Add(New ExpressionBinding("BeforePrint", "Text", "FormatString('{0:c2}', [myField])"))
-            End If
+            report.FindControl("xrlabel3", True).ExpressionBindings.Add(New ExpressionBinding("BeforePrint", "Text", "FormatString('{0:c2}', [myField])"))
 
             ' Display the report.
             Dim printTool As New ReportPrintTool(report)
