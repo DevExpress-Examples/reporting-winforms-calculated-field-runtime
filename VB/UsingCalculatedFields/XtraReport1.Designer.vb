@@ -72,7 +72,7 @@
             '
             'xrLabel3
             '
-            Me.xrLabel3.Font = New System.Drawing.Font("Times New Roman", 9.75!)
+            Me.xrLabel3.Font = New DevExpress.Drawing.DXFont("Times New Roman", 9.75!)
             Me.xrLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
             Me.xrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(278.125!, 10.00001!)
             Me.xrLabel3.Name = "xrLabel3"
@@ -181,7 +181,7 @@
             '
             'xrLabel6
             '
-            Me.xrLabel6.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold)
+            Me.xrLabel6.Font = New DevExpress.Drawing.DXFont("Times New Roman", 9.75!, DevExpress.Drawing.DXFontStyle.Bold)
             Me.xrLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
             Me.xrLabel6.LocationFloat = New DevExpress.Utils.PointFloat(278.125!, 10.00001!)
             Me.xrLabel6.Name = "xrLabel6"
@@ -195,7 +195,7 @@
             '
             'xrLabel5
             '
-            Me.xrLabel5.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold)
+            Me.xrLabel5.Font = New DevExpress.Drawing.DXFont("Times New Roman", 9.75!, DevExpress.Drawing.DXFontStyle.Bold)
             Me.xrLabel5.LocationFloat = New DevExpress.Utils.PointFloat(141.6667!, 10.00001!)
             Me.xrLabel5.Name = "xrLabel5"
             Me.xrLabel5.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
@@ -207,7 +207,7 @@
             '
             'xrLabel4
             '
-            Me.xrLabel4.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold)
+            Me.xrLabel4.Font = New DevExpress.Drawing.DXFont("Times New Roman", 9.75!, DevExpress.Drawing.DXFontStyle.Bold)
             Me.xrLabel4.LocationFloat = New DevExpress.Utils.PointFloat(10.00001!, 10.00001!)
             Me.xrLabel4.Name = "xrLabel4"
             Me.xrLabel4.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
