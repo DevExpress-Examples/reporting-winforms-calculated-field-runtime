@@ -18,7 +18,7 @@ This example creates a calculated field at runtime and binds it to the label's T
 
 - [Calculated Fields](https://docs.devexpress.com/XtraReports/4813/detailed-guide-to-devexpress-reporting/shape-report-data/use-calculated-fields/calculated-fields-overview)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-calculated-field-runtime&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-winforms-calculated-field-runtime&~~~was_helpful=no)
 
